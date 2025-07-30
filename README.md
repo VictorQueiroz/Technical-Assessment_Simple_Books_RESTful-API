@@ -125,15 +125,16 @@ The API should support create, read, update, and delete operations.
   [Fastify Swagger](https://github.com/fastify/fastify-swagger).
 - A separate `tsconfig.defaults.json` is included to help TypeScript version
   management.
-  - As reference of a possible future scenario: If a newer version (e.g.
+  - As a reference to a possible future scenario: If a newer version (e.g.
     TypeScript 6) is considered in the future, we can simply update the
     `tsconfig.defaults.json`, to understand what has changed, facilitating the
     migration.
+- To prevent compile-time overhead or negatively affect developer experience, types inferred via TypeBox's `Static` utility and TypeScript's `typeof x` expressions are cached using [Type Aliases](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases). This approach avoids repeated type resolution by both the TypeScript Compiler API and TSServer, which would otherwise re-evaluate complex expressions like `Static<typeof X>`, a cost that compounds as a codebase scales.
 
 ## Other resources used in this project
 
 - ChatGPT 4o
-  - Research and consulting of different technologies to meet the API
+  - Research and consulting on different technologies to meet the API
     implementation requirements (e.g., Fastify, TypeBox).
   - Writing the initial test cases based on the OpenAPI JSON file
 - Windsurf Pro plugin for Visual Studio Code
