@@ -82,15 +82,14 @@ npm start
 npm run dev
 ```
 
-If this command is executed, it will watch for changes in `src` directory and
-restart the server whenever a change is detected by `tsx`.
+If this command is executed, it will watch for changes in the `src` directory and restart the server whenever a change is detected by `tsx`.
 
 ### OpenAPI
 
 After the server is running, an OpenAPI specification is available at
 http://0.0.0.0:3000/openapi.
 
-## Excercise requirements
+## Exercise requirements
 
 Build a simple REST API to manage books.
 
@@ -109,8 +108,7 @@ The API should support create, read, update, and delete operations.
 - The business logic of the _Book_ entity is implemented in a separate folder
   for better separation of concerns (see
   [`src/modules/book`](src/modules/book)).
-- Books creation is limited to force creating new books to fail at some point,
-  and presenting a simple way to define configuration for a specific module.
+- Book creation is limited to forcing the creation of new books to fail at some point and presenting a simple way to define configuration for a specific module.
   - The module configuration does not contain any secret information, so the
     file does not include a `.secret.ts` extension to avoid committing it.
 - Tests were implemented using
