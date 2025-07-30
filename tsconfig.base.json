@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // Make sure Node.js types are not included by default. Include it per TypeScript project.
+    "types": [],
+    "composite": true,
+    "esModuleInterop": true,
+    "lib": [],
+
+    // Enable TypeScript strict-checking
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "strictBuiltinIteratorReturn": true,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": true,
+    "allowUnreachableCode": true
+  }
+}

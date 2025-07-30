@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "commonjs",
+    "types": ["node"]
+  },
+  "exclude": ["configuration.example.ts"]
+}
