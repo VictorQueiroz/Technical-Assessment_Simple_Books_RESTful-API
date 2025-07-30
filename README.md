@@ -1,16 +1,36 @@
 # Simple RESTful API for managing a list of books
 
-## Technologies used
+## Technologies Used
+
+### Language & Runtime
 
 - Node.js v22.17.1 (LTS)
-- Fastify (`@fastify/fastify`) v5.4.0
 - TypeScript v5.8.3
-- TypeBox (`@sinclair/typebox`) v0.34.38
-- Fastify Type Provider for TypeBox (`@fastify/type-provider-typebox`) v5.2.0
-- Swagger for Fastify (`@fastify/swagger`) v9.5.1
 - NVM v0.40.3
 
+### Web Framework & Plugins
+
+- Fastify v5.4.0
+- Fastify Type Provider for TypeBox v5.2.0
+- Fastify Swagger v9.5.1
+
+### Schema & Validation
+
+- TypeBox v0.34.38
+
+### Testing
+
+- Node.js Test runner
+- Node.js Assert
+
 ## Guide
+
+### Clone the repository
+
+```sh
+git clone https://github.com/VictorQueiroz/Technical-Assessment_Simple_Books_RESTful-API
+cd Technical-Assessment_Simple_Books_RESTful-API/
+```
 
 ### Configure
 
@@ -18,7 +38,7 @@ All the files that contain `*.secret.*` are ignored by default. The
 `configuration.secret.ts` file is supposed to keep secret information, default
 configurations.
 
-Since this is an example, no secret information is required, but, it is ready to
+Since this is an example, no secret information is required, but it is ready to
 use it for that purpose.
 
 Copy `src/configuration.example.ts` to `src/configuration.secret.ts`. Then
@@ -45,7 +65,6 @@ NVM will detect directly from the `.nvmrc` file at the root of the project.
 ### Install packages
 
 ```sh
-cd Technical-Assessment_Simple_Books_RESTful-API/
 npm install
 ```
 
